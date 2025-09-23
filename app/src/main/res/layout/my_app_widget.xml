@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <!-- دایره‌ی اصلی کرنومتر -->
+    <FrameLayout
+        android:id="@+id/timer_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/circle_timer_bg">
+
+        <!-- نمایش متن زمان -->
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </FrameLayout>
+
+    <!-- کلید بیضوی برای استارت/استاپ -->
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_below="@id/timer_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/oval_button_bg"
+        android:text="Start"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
